@@ -1,17 +1,19 @@
 package Entities;
 
+import java.time.LocalDate;
+
 import Abstract.IEntity;
 
 public class Campaign implements IEntity {
 	String campaignName;
-    String campaignStart;
-    String campaignFinish;
+	LocalDate campaignStart;
+	LocalDate campaignFinish;
     
 	public Campaign() {
 		
 	}
 
-	public Campaign(String campaignName, String campaignStart, String campaignFinish) {
+	public Campaign(String campaignName, LocalDate campaignStart, LocalDate campaignFinish) {
 		this.campaignName = campaignName;
 		this.campaignStart = campaignStart;
 		this.campaignFinish = campaignFinish;
@@ -25,19 +27,19 @@ public class Campaign implements IEntity {
 		this.campaignName = campaignName;
 	}
 
-	public String getCampaignStart() {
+	public LocalDate getCampaignStart() {
 		return campaignStart;
 	}
 
-	public void setCampaignStart(String campaignStart) {
+	public void setCampaignStart(LocalDate campaignStart) {
 		this.campaignStart = campaignStart;
 	}
 
-	public String getCampaignFinish() {
+	public LocalDate getCampaignFinish() {
 		return campaignFinish;
 	}
 
-	public void setCampaignFinish(String campaignFinish) {
+	public void setCampaignFinish(LocalDate campaignFinish) {
 		this.campaignFinish = campaignFinish;
 	}
 }
